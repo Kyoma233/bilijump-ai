@@ -29,6 +29,9 @@
 * **增加功能**： 增加 surge 模块去广告功能。
 * **增加 [surge 模块](script/bilijump.sgmodule)**： 增加 surge 模块，使用番剧的跳过 OPED 功能自动跳过；在 surge 中导入模块，开启 MitM 功能即可启用，目前仅支持云端数据；模块修改自 [Sparkle](https://github.com/kokoryh/Sparkle)
 
+## v2.3.32 版本更新
+* **修复遮挡**：播放器内叠加弹窗（广告跳过卡片、无字幕询问框、提示 toast、人工纠错面板）由右下角移至左下角，不再遮挡 B 站播放器右下角弹出的音量滑块。
+
 ## v2.3.29 版本更新
 * **本地额度统计**：根据任务响应中的 `usage.duration`，按 API Key 和自然月分别扣减 `paraformer-v2`、`paraformer-v1` 剩余额度；优先使用 v2，v2 额度耗尽后自动切换 v1，两者均耗尽时停止调用音频识别，点击剩余额度可手动修正。
 

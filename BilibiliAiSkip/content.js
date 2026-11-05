@@ -182,7 +182,7 @@ let popups = { audioCheck: null, task: null, ai: null, ads: [], others: []}, now
                                         //popup.title = "按k或点击倒计时跳过";
                                         popup.style.position = 'absolute';
                                         popup.style.bottom = '90px';
-                                        popup.style.right = '30px';
+                                        popup.style.left = '30px';
                                         popup.style.width = '300px';
                                         popup.style.padding = '15px';
                                         popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
@@ -634,7 +634,7 @@ async function checkPopup() {
         `;
         popup.style.position = 'absolute';
         popup.style.bottom = '90px';
-        popup.style.right = '30px';
+        popup.style.left = '30px';
         popup.style.width = '300px';
         popup.style.padding = '15px';
         popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
@@ -681,7 +681,7 @@ function showPopup(msg,persist) {
     popup.innerText = msg;
     popup.style.position = 'absolute';
     popup.style.bottom = `${80 + popupCount * 60}px`;
-    popup.style.right = '10px';
+    popup.style.left = '10px';
     popup.style.padding = '10px';
     popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
     popup.style.color = '#fff';
@@ -790,7 +790,7 @@ function showCorrectionPopup(cid, currentAdsData) {
     `;
     popup.style.position = 'absolute';
     popup.style.bottom = '120px';
-    popup.style.right = '30px';
+    popup.style.left = '30px';
     popup.style.width = '420px';
     popup.style.padding = '20px';
     popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(50, 50, 50, 0.8))';

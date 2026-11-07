@@ -181,8 +181,8 @@ let popups = { audioCheck: null, task: null, ai: null, ads: [], others: []}, now
                                         `;
                                         //popup.title = "按k或点击倒计时跳过";
                                         popup.style.position = 'absolute';
-                                        popup.style.bottom = '90px';
-                                        popup.style.left = '30px';
+                                        popup.style.top = '90px';
+                                        popup.style.right = '30px';
                                         popup.style.width = '300px';
                                         popup.style.padding = '15px';
                                         popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
@@ -634,8 +634,8 @@ async function checkPopup() {
             </div>
         `;
         popup.style.position = 'absolute';
-        popup.style.bottom = '90px';
-        popup.style.left = '30px';
+        popup.style.top = '90px';
+        popup.style.right = '30px';
         popup.style.width = '300px';
         popup.style.padding = '15px';
         popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
@@ -681,8 +681,8 @@ function showPopup(msg,persist) {
     var popup = document.createElement('div');
     popup.innerText = msg;
     popup.style.position = 'absolute';
-    popup.style.bottom = `${80 + popupCount * 60}px`;
-    popup.style.left = '10px';
+    popup.style.top = `${80 + popupCount * 60}px`;
+    popup.style.right = '10px';
     popup.style.padding = '10px';
     popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5))';
     popup.style.color = '#fff';
@@ -790,8 +790,8 @@ function showCorrectionPopup(cid, currentAdsData) {
         </div>
     `;
     popup.style.position = 'absolute';
-    popup.style.bottom = '120px';
-    popup.style.left = '30px';
+    popup.style.top = '60px';
+    popup.style.right = '30px';
     popup.style.width = '420px';
     popup.style.padding = '20px';
     popup.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(50, 50, 50, 0.8))';
@@ -1316,7 +1316,7 @@ function showCorrectionPopup(cid, currentAdsData) {
 
 const adjustPopupPositions = () => {
     document.querySelectorAll('.popup').forEach((el, i, arr) => {
-        el.style.bottom = `${100 + (arr.length - i - 1) * (el.offsetHeight + 10)}px`;
+        el.style.top = `${100 + (arr.length - i - 1) * (el.offsetHeight + 10)}px`;
     });
 };
 
